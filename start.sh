@@ -33,7 +33,7 @@ fi;
 
 if [ "$MASTER" == "localhost" ] ; then
   # start a local master
-  python /opt/kaldi-gstreamer-server/kaldigstserver/master_server.py --port=$PORT 2>> /opt/master.log &
+  python3 /opt/kaldi-gstreamer-server/kaldigstserver/master_server.py --port=$PORT 2>> /opt/master.log &
 fi
 
 #start worker and connect it to the master
